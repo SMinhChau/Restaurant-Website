@@ -15,27 +15,27 @@ function Navbar() {
    </div>
    <ul className={cx('app_navbar-links')}>
     <li className={cx('app_navbar-link')}>
-     <a className={cx('p__opensans')} href="#home">
+     <a className={cx('p__opensans')} href="/home">
       Home
      </a>
     </li>
     <li className={cx('app_navbar-link')}>
-     <a className={cx('p__opensans')} href="#pages">
+     <a className={cx('p__opensans')} href="/pages">
       Pages
      </a>
     </li>
     <li className={cx('app_navbar-link')}>
-     <a className={cx('p__opensans')} href="#contacts">
+     <a className={cx('p__opensans')} href="/contacts">
       Contacts Us
      </a>
     </li>
     <li className={cx('app_navbar-link')}>
-     <a className={cx('p__opensans')} href="#bolgs">
+     <a className={cx('p__opensans')} href="/bolgs">
       Blogs
      </a>
     </li>
     <li className={cx('app_navbar-link')}>
-     <a className={cx('p__opensans')} href="#landing">
+     <a className={cx('p__opensans')} href="/landing">
       Landing
      </a>
     </li>
@@ -72,27 +72,27 @@ function Navbar() {
       />
       <ul className={cx('app_navbar-smallsreen-links')}>
        <li className={cx('app_navbar-smallsreen-link')}>
-        <a className={cx('p__opensans')} href="#home">
+        <a className={cx('p__opensans')} href="/home">
          Home
         </a>
        </li>
        <li className={cx('app_navbar-smallsreen-link')}>
-        <a className={cx('p__opensans')} href="#pages">
+        <a className={cx('p__opensans')} href="/pages">
          Pages
         </a>
        </li>
        <li className={cx('app_navbar-smallsreen-link')}>
-        <a className={cx('p__opensans')} href="#contacts">
+        <a className={cx('p__opensans')} href="/contacts">
          Contacts Us
         </a>
        </li>
        <li className={cx('app_navbar-smallsreen-link')}>
-        <a className={cx('p__opensans')} href="#bolgs">
+        <a className={cx('p__opensans')} href="/bolgs">
          Blogs
         </a>
        </li>
        <li className={cx('app_navbar-smallsreen-link')}>
-        <a className={cx('p__opensans')} href="#landing">
+        <a className={cx('p__opensans')} href="/landing">
          Landing
         </a>
        </li>
