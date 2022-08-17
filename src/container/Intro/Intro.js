@@ -4,6 +4,7 @@ import styles from './Intro.scss';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 import { meal } from '~/constants';
 import { useRef, useState } from 'react';
+
 const cx = classNames.bind(styles);
 
 function Intro() {
