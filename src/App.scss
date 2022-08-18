@@ -65,6 +65,10 @@
  border: none;
  outline: none;
  cursor: pointer;
+ &:hover {
+  opacity: 0.75;
+  transition: 0.05s ease;
+ }
 }
 
 .p__cormorant {

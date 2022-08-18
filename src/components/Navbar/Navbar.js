@@ -30,7 +30,7 @@ function Navbar() {
      </a>
     </li>
     <li className={cx('app_navbar-link')}>
-     <a className={cx('p__opensans')} href="/bolgs">
+     <a className={cx('p__opensans')} href="/blogs">
       Blogs
      </a>
     </li>
@@ -42,7 +42,7 @@ function Navbar() {
    </ul>
    <div className={cx('app_navbar-login')}>
     <div>
-     <a href="/login " className={cx('p__opensans')}>
+     <a href="/login " className={cx('p__opensans')} id="account">
       Log in / registration
      </a>
     </div>
