@@ -7,15 +7,6 @@ import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import Laurels from './Laurels/Laurels';
 import SpecialMenu from './Menu/SpecialMenu';
+import Singup from './Singup/Singup';
 
-export {
-  AboutUs,
-  Chef,
-  FindUs,
-  Footer,
-  Gallery,
-  Header,
-  Intro,
-  Laurels,
-  SpecialMenu,
-};
+export { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu, Singup };

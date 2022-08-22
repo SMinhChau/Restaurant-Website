@@ -1,0 +1,53 @@
+.app__wrapper-register {
+ flex-direction: column;
+ width: 100%;
+ height: 100vh;
+ background-color: var(--color-black);
+
+ h1 {
+  margin-bottom: 2rem;
+ }
+}
+
+.login_screen-form {
+ display: flex;
+
+ flex-direction: column;
+ form {
+  display: flex;
+  flex-direction: column;
+ }
+}
+.login_screen-form {
+ margin-bottom: 2.5rem;
+ input {
+  width: 620px;
+  border: 1px solid var(--color-golden);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: var(--font-base);
+  margin-bottom: 2rem;
+
+  padding: 0.75rem 1rem;
+  color: var(--color-white);
+  background-color: var(--color-black);
+ }
+}
+.login_screen-form button {
+ font-size: 1.5rem;
+ width: 100%;
+ border: 1px solid var(--color-golden);
+ border-radius: 5px;
+ text-transform: capitalize;
+ padding: 0.75rem 1rem;
+ transition: 0.5s ease;
+}
+
+.login_screen-text {
+ margin-top: 2rem;
+ p {
+  a {
+   color: var(--color-golden);
+  }
+ }
+}

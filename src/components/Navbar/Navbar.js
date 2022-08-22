@@ -1,13 +1,31 @@
-import { FaBars, FaRegTimesCircle } from 'react-icons/fa';
+import { FaBars, FaRegTimesCircle, FaSignOutAlt } from 'react-icons/fa';
 import classNames from 'classnames/bind';
 import styles from './Navbar.scss';
 import images from '~/constants/images';
 import { useState } from 'react';
+import { UserAuth } from '~/contexts/AuthContext';
+import { useNavigate } from 'react-router';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 const cx = classNames.bind(styles);
 
 function Navbar() {
  const [toggleMenu, settoggleMenu] = useState(false);
+
+ const { user, logout } = UserAuth();
+ const navigate = useNavigate();
+
+ const handleLogout = async () => {
+  try {
+   await logout();
+   navigate('/');
+   console.log('You are logged out');
+  } catch (e) {
+   console.log(e.message);
+  }
+ };
+
  return (
   <div className={cx('app_navbar')}>
    <div className={cx('app_navbar-logo')}>
@@ -41,11 +59,13 @@ function Navbar() {
     </li>
    </ul>
    <div className={cx('app_navbar-login')}>
-    <div>
-     <a href="/login " className={cx('p__opensans')} id="account">
-      Log in / registration
-     </a>
-    </div>
+    {!user && (
+     <div>
+      <a href="login" className={cx('p__opensans')} id="account">
+       Log in / registration
+      </a>
+     </div>
+    )}
     <div className={cx('login-div')}></div>
     <div className={cx('left-icon')}></div>
     <div>
@@ -54,6 +74,11 @@ function Navbar() {
       book table
      </a>
     </div>
+    <Tippy content={<span className={cx('logout__account-email')}>emai: {user.email}</span>}>
+     <button>
+      <FaSignOutAlt className={cx('logout-icon')} onClick={handleLogout} />
+     </button>
+    </Tippy>
    </div>
    <div className={cx('app_navbar-smallsreen ')}>
     <FaBars
