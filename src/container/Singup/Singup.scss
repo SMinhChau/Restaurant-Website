@@ -5,16 +5,24 @@
  background-color: var(--color-black);
 
  h1 {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
  }
 }
-
+.app__content {
+ border-radius: 5px;
+ flex-direction: column;
+ border: 2px solid rgb(195, 172, 172);
+ background-color: var(--color-black);
+ width: 65%;
+}
 .login_screen-form {
  display: flex;
 
  flex-direction: column;
  form {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
  }
 }

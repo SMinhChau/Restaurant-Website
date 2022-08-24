@@ -7,6 +7,7 @@ import Home from '~/pages/Home/Home';
 import { Singup } from './container';
 import Signin from './container/Signin/Signin';
 import { AuthContextProvider } from './contexts/AuthContext';
+import ProtectRouter from '~/pages/ProtectRouter';
 
 function App() {
  return (
@@ -15,9 +16,23 @@ function App() {
     <Routes>
      <Route path="/">
       <Route index element={<Signin />} />
-      <Route path="home" element={<Home />} />
       <Route path="register" element={<Singup />} />
-      <Route path="blogs" element={<Blogs />} />
+      <Route
+       path="home"
+       element={
+        <ProtectRouter>
+         <Home />
+        </ProtectRouter>
+       }
+      />
+      <Route
+       path="blogs"
+       element={
+        <ProtectRouter>
+         <Blogs />
+        </ProtectRouter>
+       }
+      />
      </Route>
     </Routes>
    </AuthContextProvider>
